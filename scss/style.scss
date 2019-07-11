@@ -13,6 +13,7 @@
   content: "";
 }
 
+
 /* ==========================================================================
    Author's custom styles
   ========================================================================== */
@@ -38,26 +39,29 @@ li {
 
 nav.preamble {
   width: 100%;
-  align-items: right;
   background-color: #FFFFFF;
-  float: right;
-  padding-left: 10px;
-  text-align: right;
+  overflow: hidden;
 
+  ul {
+    float: right;
 
-  li.preamble {
-    list-style: none;
+    li {
+      float: left;
+
+      a {
+        padding: 10px;
+        width: 52px;
+        height: 52px;
+        display: block;
+      }
+
+      img {
+        display: block;
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
-
-    a {
-      padding: 0px 10px;
-      display: inline-block;
-    }
-
-    img {
-      width: 32px;
-    }
-
 }
 
 
@@ -71,6 +75,7 @@ h1 {
   line-height: 1;
   float: left;
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 35%;
 
   a, a:visited {
@@ -81,7 +86,7 @@ h1 {
   }
 }
    img.logo {
-    width: 100px;   
+    width: 100px;
     vertical-align:middle;
   }
 
@@ -144,32 +149,29 @@ footer p {
    ================================================================ */
 nav.tab-header {
   float: right;
-  padding-left: 10px;
-  text-align: right;
-  align-items: right;
-  font-family: 'Lato', sans-serif;
   padding-left: 60px;
-  width: 60%;
+  width: 65%;
 
+  ul {
+    float: right;
 
+    li {
+      float: left;
+      text-align: center;
+      padding-top: 15px;
 
-  li {
-    float: left;
-    text-align: center;
-    padding-top: 15px;
-  
+      a {
+        display: inline-block;
+        padding: 20px 15px;
+        color: #E7C391;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Lato',  sans-serif;
+      }
 
-    a {
-      display: inline-block;
-      padding: 20px 15px;
-      color: #E7C391;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-family: 'Lato',  sans-serif;
-    }
-
-    a:hover {
-      text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan;
+      a:hover {
+        text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan;
+      }
     }
   }
 }
@@ -228,7 +230,7 @@ header nav strong {
    ================================================================ */
   div.blurb {
   float: right;
-  width: 420px; 
+  width: 420px;
   display: table;
   margin: 0 auto;
   padding: 50px;
@@ -309,7 +311,7 @@ header nav strong {
       margin-bottom: 0;
       float: none;
       display: block;
-      width: 32.5rem; 
+      width: 32.5rem;
       margin: 0 auto;
       padding: 50px;
       background-color: rgba(255, 255, 255, .8);
@@ -335,14 +337,14 @@ header nav strong {
       display: block;
   }
 
-    
 
-  .Desktop-Menu { 
-      display: none; 
+
+  .Desktop-Menu {
+      display: none;
     }
 
-  nav select { 
-  display: inline-block; 
+  nav select {
+  display: inline-block;
 
   }
 
