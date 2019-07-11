@@ -1,10 +1,73 @@
 /* ==========================================================================
    Global Overrides
   ========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 * {
   box-sizing: border-box;
 }
 
+/* line 10, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 .clearfix:after {
   display: table;
   clear: both;
@@ -16,10 +79,12 @@
   ========================================================================== */
 /* Global
    ================================================================ */
+/* line 25, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 html {
   font-size: 16px;
 }
 
+/* line 29, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 body {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.5;
@@ -27,34 +92,46 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 36, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 li {
   list-style: none;
 }
 
+/* line 40, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 nav.preamble {
   width: 100%;
-  align-items: right;
   background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+/* line 45, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
+nav.preamble ul {
   float: right;
-  padding-left: 10px;
-  text-align: right;
 }
 
-nav.preamble li.preamble {
-  list-style: none;
+/* line 48, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
+nav.preamble ul li {
+  float: left;
 }
 
-nav.preamble a {
-  padding: 0px 10px;
-  display: inline-block;
+/* line 51, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
+nav.preamble ul li a {
+  padding: 10px;
+  width: 52px;
+  height: 52px;
+  display: block;
 }
 
-nav.preamble img {
+/* line 58, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
+nav.preamble ul li img {
+  display: block;
   width: 32px;
+  height: 32px;
 }
 
 /* Headings
    ================================================================ */
+/* line 71, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 h1 {
   font-family: 'Lato', sans-serif;
   color: #E7C391;
@@ -62,9 +139,11 @@ h1 {
   line-height: 1;
   float: left;
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 35%;
 }
 
+/* line 81, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 h1 a, h1 a:visited {
   color: #E7C391;
   bottom: 10;
@@ -72,11 +151,13 @@ h1 a, h1 a:visited {
   text-decoration: none;
 }
 
+/* line 88, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 img.logo {
   width: 100px;
   vertical-align: middle;
 }
 
+/* line 93, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 h2 {
   font-family: "Source Sans Pro";
   font-weight: 700;
@@ -84,62 +165,73 @@ h2 {
   margin: 0;
 }
 
+/* line 100, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 h3 {
   font-family: "Merriweather", serif;
   font-size: 1.563rem;
   margin: 0;
 }
 
+/* line 106, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 nav select {
   display: none;
 }
 
 /* Text Styles
    ================================================================ */
+/* line 116, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 p {
   margin: 0 0 30px;
 }
 
 /* Header/Footer
    ================================================================ */
+/* line 125, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 header,
 footer {
   background-color: #3b3a3a;
 }
 
+/* line 131, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 header {
   padding: 0 20px;
   border-bottom: 2px solid gray;
 }
 
+/* line 137, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 footer {
   clear: both;
   padding: 25px 38px;
 }
 
+/* line 142, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 footer p {
   margin: 0;
 }
 
 /* Navigation
    ================================================================ */
+/* line 150, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 nav.tab-header {
   float: right;
-  padding-left: 10px;
-  text-align: right;
-  align-items: right;
-  font-family: 'Lato', sans-serif;
   padding-left: 60px;
-  width: 60%;
+  width: 65%;
 }
 
-nav.tab-header li {
+/* line 155, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
+nav.tab-header ul {
+  float: right;
+}
+
+/* line 158, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
+nav.tab-header ul li {
   float: left;
   text-align: center;
   padding-top: 15px;
 }
 
-nav.tab-header li a {
+/* line 163, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
+nav.tab-header ul li a {
   display: inline-block;
   padding: 20px 15px;
   color: #E7C391;
@@ -148,10 +240,12 @@ nav.tab-header li a {
   font-family: 'Lato',  sans-serif;
 }
 
-nav.tab-header li a:hover {
+/* line 172, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
+nav.tab-header ul li a:hover {
   text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan;
 }
 
+/* line 179, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 header nav strong {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -159,6 +253,7 @@ header nav strong {
 
 /* Buttons
    ================================================================ */
+/* line 186, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 .button,
 .button:visited {
   font-family: "Oswald", sans-serif;
@@ -175,12 +270,14 @@ header nav strong {
 }
 
 /* Super info button in blurb */
+/* line 202, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 .blurb .button {
   transition: all .2s ease;
   color: white;
   background: #fa4542;
 }
 
+/* line 208, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 .blurb .button:hover {
   color: white;
   background: #f6201d;
@@ -188,6 +285,7 @@ header nav strong {
 
 /* Tagline
    ================================================================ */
+/* line 216, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 .tagline {
   font-family: "Merriweather", serif;
   font-size: 1.25rem;
@@ -202,6 +300,7 @@ header nav strong {
 
 /* Banner
    ================================================================ */
+/* line 231, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 div.blurb {
   float: right;
   width: 420px;
@@ -214,6 +313,7 @@ div.blurb {
 
 /* Info Sections (Call to action columns)
    ================================================================ */
+/* line 244, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 .info {
   float: left;
   width: 33.333333334%;
@@ -222,17 +322,21 @@ div.blurb {
   border-right: 1px solid rgba(0, 0, 0, 0.15);
 }
 
+/* line 252, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
 .info:last-of-type {
   border-right: none;
 }
 
 @media screen and (max-width: 968px) {
+  /* line 258, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   html {
     font-size: 18px;
   }
+  /* line 262, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   header {
     padding: 0 20px 0 20px;
   }
+  /* line 266, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   h1 {
     float: none;
     width: 100%;
@@ -241,11 +345,13 @@ div.blurb {
     text-align: center;
     font-size: 1.563rem;
   }
+  /* line 277, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   nav {
     float: none;
     width: 100%;
     padding: 0;
   }
+  /* line 283, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   nav a {
     float: none;
     display: block;
@@ -253,10 +359,12 @@ div.blurb {
     padding: 2px;
     margin: 0 0 10px 0;
   }
+  /* line 291, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   nav li {
     float: none;
     text-align: center;
   }
+  /* line 296, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   .tagline {
     font-size: 1.0rem;
     font-style: italic;
@@ -267,6 +375,7 @@ div.blurb {
     border-top: 1px solid #aaa;
     background-color: #deece6;
   }
+  /* line 310, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   .blurb {
     margin-bottom: 0;
     float: none;
@@ -277,37 +386,45 @@ div.blurb {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   }
+  /* line 321, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   .info {
     float: none;
     width: 100%;
     padding: 0;
     margin: 0 0 10px 0;
   }
+  /* line 328, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   .Develop-Design {
     float: left;
     width: 50%;
     display: block;
   }
+  /* line 334, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   .About-Us {
     float: left;
     width: 33.33333333%;
     display: block;
   }
+  /* line 342, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   .Desktop-Menu {
     display: none;
   }
+  /* line 346, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   nav select {
     display: inline-block;
   }
+  /* line 351, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   header h1 {
     float: left;
     width: 75%;
     text-align: left;
   }
+  /* line 358, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   a.mobile-header {
     font-size: 1.563rem;
     color: #E7C391;
   }
+  /* line 364, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   nav.mobile-header {
     float: right;
     width: 60%;
@@ -315,9 +432,11 @@ div.blurb {
     padding-left: 50px;
     margin: 10px 0;
   }
+  /* line 372, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   section.info {
     padding: 0 30px 30px 30px;
   }
+  /* line 377, ../../../../../Users/eboyer/Sites/jtinley7.github.io/scss/style.scss */
   section.banner {
     margin-bottom: 30px;
   }
@@ -334,3 +453,5 @@ div.blurb {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }*/
+
+/*# sourceMappingURL=style.css.map */
